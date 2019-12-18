@@ -3,7 +3,7 @@ def menu
   puts "1) reset"
   puts "2) aula109.static"
   puts "3) casa.static"
-  option = gets.chomp
+  option = gets.chomp.to_i
   if option == 1
     system('sudo ifdown eth0')
     system('sudo ifup eth0')

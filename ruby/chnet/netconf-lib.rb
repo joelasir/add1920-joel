@@ -11,7 +11,7 @@ def menu
     system('sudo ip addr add 172.19.8.1/16 dev eth0')
   elsif option == 3
     system('sudo ip addr add 192.168.1.1/24 dev eth0')
-  end
   else
     puts "Choose a correct option"
+  end  
 end

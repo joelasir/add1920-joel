@@ -19,7 +19,7 @@ def install(packages)
 
   if process == 'install'
     if comp == 0
-      `apt-get install #{packages[0]}`
+      `zypper install #{packages[0]}`
       puts "#{packages[0]} instalado correctamente"
     else
       puts "#{packages[0]} ya está instalado"

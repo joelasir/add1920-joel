@@ -1,0 +1,4 @@
+atomix:remove
+nmap:install
+tree:install
+

@@ -3,15 +3,16 @@ def menu
   puts "1) reset"
   puts "2) aula109.static"
   puts "3) casa.static"
-  option = gets.chomp
+  option = gets.chomp.to_i
+puts option
+puts option.class
   if option == 1
     system('sudo ifdown eth0')
     system('sudo ifup eth0')
   elsif option == 2
     system('sudo ip addr add 172.19.8.1/16 dev eth0')
   elsif option == 3
+    puts "Ejecutanto la opción 3.."		
     system('sudo ip addr add 192.168.1.1/24 dev eth0')
-  else
-    puts "Choose a correct option"
   end  
 end
